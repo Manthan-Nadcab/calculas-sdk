@@ -20,7 +20,7 @@ var _SOLIDITY_TYPE_MAXIMA;
 
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 1206] = "MAINNET";
-  ChainId[ChainId["TESTNET"] = 7923] = "TESTNET";
+  ChainId[ChainId["TESTNET"] = 1423] = "TESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
 
 (function (TradeType) {
@@ -34,8 +34,8 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0x419a36470c174527c024F8a025Ae1F1886331C4B';
-var INIT_CODE_HASH = '0x58f4124f32cd384026e345cf9caf39d3ed92374ceb834005bb3d362bb2b68060';
+var FACTORY_ADDRESS = '0x9Fc2995df0d07844E3e2Cc0Ac2E913B000447703';
+var INIT_CODE_HASH = '0x01045be0a57378beb6a5c7affaa4084fd6dc9be30541929b5dcb1ac66574217b';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -369,7 +369,7 @@ function Currency(decimals, symbol, name, address) {
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'DTBX', 'DotBlox', '0x70e4975f22d5ddE23f00B056f410923149A0af15');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'BTP', 'BitPlug', '0x22522f9c0da09a80b8effb4e0e325904c71803f3');
 var ETHER = Currency.ETHER;
 
 var _WETH;
@@ -435,7 +435,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x70e4975f22d5ddE23f00B056f410923149A0af15', 18, 'WDTBX', 'Wrapped DotBlox'), _WETH[exports.ChainId.TESTNET] = /*#__PURE__*/new Token(exports.ChainId.TESTNET, '0x70e4975f22d5ddE23f00B056f410923149A0af15', 18, 'WDTBX', 'Wrapped DotBlox'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x22522f9c0da09a80b8effb4e0e325904c71803f3', 18, 'WBTP', 'Wrapped BitPlug'), _WETH[exports.ChainId.TESTNET] = /*#__PURE__*/new Token(exports.ChainId.TESTNET, '0x22522f9c0da09a80b8effb4e0e325904c71803f3', 18, 'WBTP', 'Wrapped BitPlug'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
