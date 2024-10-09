@@ -34,8 +34,8 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0xbFdCD5F8F0E27f3704B58F78014C0CC331F5FEb1';
-var INIT_CODE_HASH = '0x32158d0b94604a09dc33c82a88021a317953cffb5e84c86e8b020626b92893fb';
+var FACTORY_ADDRESS = '0x419a36470c174527c024F8a025Ae1F1886331C4B';
+var INIT_CODE_HASH = '0x58f4124f32cd384026e345cf9caf39d3ed92374ceb834005bb3d362bb2b68060';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -369,7 +369,7 @@ function Currency(decimals, symbol, name, address) {
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'Taral', 'Tarality', '0xB8Df3cbb00d4AF1E452C7Ac02025747013790EAd');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'DSC', 'DSC Coin', '0xE8Bdf8d0CD100caddCC729D5f77fb4e5C6Cf933a');
 var ETHER = Currency.ETHER;
 
 var _WETH;
